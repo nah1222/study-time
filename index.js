@@ -5,3 +5,10 @@ function greet (name, owner) {
   }
   return "Hello guest"
 }
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min = Math.min(...args)
+    return min
+  }
+}
