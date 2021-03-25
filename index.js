@@ -12,3 +12,15 @@ class SmallestIntegerFinder {
     return min
   }
 }
+
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  let squareRoot = Math.sqrt(sq)
+  let nextRoot = squareRoot + 1
+  if(squareRoot % 1 !== 0){
+    return -1;
+  }
+  return Math.pow(nextRoot, 2)
+  
+  
+}
