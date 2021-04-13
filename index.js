@@ -39,3 +39,14 @@ function isIsogram(str){
   }
   return true
 }
+
+function isTriangle(a,b,c)
+{
+ let big = Math.max(a, b, c);
+ let sum = a + b + c;
+ if (sum - big > big){
+   return true
+ }
+ 
+return false;
+}
