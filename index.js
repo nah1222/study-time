@@ -66,3 +66,16 @@ var maxProfit = function(prices) {
   return profit
   
 };
+
+const runningSum = function(nums) {
+    let total = 0
+    //loop through the num array
+    for(let i = 0; i < nums.length; i++){
+        //add the previous number to the current number and set it to equal the current number
+        total= nums[i] + total
+        nums[i] = total
+    }
+    //return nums
+    return nums
+    total = 0
+};
