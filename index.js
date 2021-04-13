@@ -50,3 +50,19 @@ function isTriangle(a,b,c)
  
 return false;
 }
+
+var maxProfit = function(prices) {
+  let profit = 0
+  let dayOne = prices[0]
+  for(let i = 0; i < prices.length; i++){
+      let difference = prices[i] - dayOne;
+      if (dayOne > prices[i]){
+          dayOne = prices[i]
+      }
+      if(profit < difference){
+         profit = difference 
+      }
+  }
+  return profit
+  
+};
