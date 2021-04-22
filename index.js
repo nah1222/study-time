@@ -101,6 +101,8 @@ function SeriesSum(n)
   return sum.toFixed(2);
 }
 
+//JAVASCRIPT ALGORITHIM CLASS STEELE
+
 //write a function called same, which accepts two arrays. the function should return true if every value in the second array. the frequency must be the same.
 //naive solution time complexity n^2
 function same(arr1, arr2){
